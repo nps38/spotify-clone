@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react"
 import Login from "./Login"
 import { getTokenFromUrl } from './spotify'
 import SpotifyWebApi from "spotify-web-api-js"
+import Player from './Player'
+import { useDataLayerValue } from './DataLayer'
 
 const spotify = new SpotifyWebApi();
 
 function App() {
-const [token, setToken] = useState(null);
-
+  const [token, setToken] = useState(null);
+  const [{}, dispatch] = useDataLayerValue();
   //run code based on given condition
   useEffect(() => {
     const hash = getTokenFromUrl();
@@ -29,13 +31,7 @@ const [token, setToken] = useState(null);
     <div className="app">
       {/* Spotify logo */}
       {/* Login with spotify button */}
-      {
-        token ? (
-          <h1>I am logged in</h1>
-        ) : (
-          <Login />
-        )
-      }
+      {token ? <Player /> : <Login />}
     </div>
   );
 }
