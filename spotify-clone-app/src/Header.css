@@ -17,6 +17,7 @@
   border-radius: 30px;
   color: gray;
   align-items: center;
+  min-width: 70px;
 }
 
 .header_left > input {
