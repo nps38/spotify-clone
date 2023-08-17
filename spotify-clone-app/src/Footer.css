@@ -27,14 +27,6 @@
   justify-content: space-between; 
 }
 
-.footer_right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  flex: 0.3; 
-}
-
 .footer_albumLogo {
   height: 60px;
   width: 60px;
@@ -58,4 +50,16 @@
 .footer_green:hover {
   transition: transform 0.2s ease-in-out;
   transform: scale(1.2) !important;
+}
+
+.footer_right * .MuiSlider-root {
+  color: green;
+}
+
+.footer_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex: 0.3; 
 }
