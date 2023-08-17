@@ -8,3 +8,29 @@
   width: 97%;
   background-color: #282828;
 }
+
+.footer_left {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
+  flex: 0.3;
+}
+
+.footer_center {
+  flex: 0.4;
+  max-width: 300px;
+  padding: 0 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.footer_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex: 0.3; 
+}
