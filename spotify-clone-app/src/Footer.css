@@ -1,10 +1,10 @@
 .footer {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    bottom: 0;
-    padding: 20px;
-    height: 65px;
-    width: 97%;
-    background-color: #282828;
-  }
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 20px;
+  height: 65px;
+  width: 97%;
+  background-color: #282828;
+}
