@@ -13,7 +13,7 @@ function Body({ spotify }) {
   const playPlaylist = (id) => {
     spotify
       .play({
-        context_uri: `spotify:playlist:37i9dQZEVXcJZyENOWUFo7`,
+        context_uri: `spotify:playlist:6f57VsC38s6i9sMi7lUCHq`,
       })
       .then((res) => {
         spotify.getMyCurrentPlayingTrack().then((r) => {
@@ -73,7 +73,7 @@ function Body({ spotify }) {
           </div>
 
           {discover_weekly?.tracks.items.map((item) => (
-            <SongRow track={item.track} />
+            <SongRow playSong={playSong} track={item.track} />
             ))}
         </div>
     </div>
